@@ -1,7 +1,7 @@
-output "azure_storage_name" {
-  value = "${azurerm_storage_account.serverless-storage.name}"
+output "azure_signalr_hostname" {
+  value = "${azurerm_signalr_service.serverless-signalr.hostname}"
 }
 
-output "azure_storage_primary_connection_string" {
-  value = "${azurerm_storage_account.serverless-storage.primary_connection_string}"
+output "azure_signalr_primary_connection_string" {
+  value = "${azurerm_signalr_service.serverless-signalr.primary_connection_string}"
 }
